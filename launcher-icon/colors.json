@@ -1,0 +1,18 @@
+{
+  "seed": "#0B8A3C",
+  "brand": {
+    "pca-green": "#0B8A3C",
+    "pca-yellow": "#FFF200",
+    "pca-surface": "#F2F2F2"
+  },
+  "material3": {
+    "primary": "#0B8A3C",
+    "onPrimary": "#FFFFFF",
+    "primaryContainer": "#F2F2F2",
+    "onPrimaryContainer": "#0B8A3C",
+    "secondary": "#FFF200",
+    "onSecondary": "#1A1A00",
+    "background": "#0B8A3C"
+  },
+  "notes": "Brand colors sampled from the official PCA Region XIII disc (pca_logo.png). Yellow is #FFF200 (not #F8F000). White core is #F2F2F2."
+}
