@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <g transform="translate(54 54)">
+    <circle r="33" fill="#F2F2F2"/>
+    <circle r="30" fill="#0B8A3C"/>
+    <path fill="#FFF200" d="M0,-27 A27,27 0 0 0 0,27 L0,15.66 A15.66,15.66 0 0 1 0,-15.66 Z"/>
+    <path fill="#F2F2F2" d="M0,-12.87 A12.87,12.87 0 0 0 0,12.87 Z"/>
+  </g>
+</svg>
