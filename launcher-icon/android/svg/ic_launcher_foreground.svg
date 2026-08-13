@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
-  <!-- Soft plate for contrast on green adaptive backgrounds -->
-  <circle cx="54" cy="54" r="34" fill="#F4F4F4"/>
+  <!-- Quiet-zone plate (QR on white, centered in adaptive safe zone) -->
+  <rect x="22" y="22" width="64" height="64" rx="10" fill="#F4F4F4"/>
 
-  <!-- PCA hemispheric seal -->
-  <g transform="translate(54 54)">
-    <!-- Full green disc (right half remains solid green) -->
-    <circle r="28" fill="#0B8A3C"/>
-    <!-- Yellow C-band on the left -->
-    <path d="M0,-28 A28,28 0 0 0 0,28 L0,21 A21,21 0 0 1 0,-21 Z" fill="#F8F000"/>
-    <!-- Thin green separator between yellow and white core -->
-    <path d="M0,-21 A21,21 0 0 0 0,21 L0,19 A19,19 0 0 1 0,-19 Z" fill="#0B8A3C"/>
-    <!-- White core semicircle to center -->
-    <path d="M0,-19 A19,19 0 0 0 0,19 L0,0 Z" fill="#F4F4F4"/>
+  <!-- QR finder patterns: top-left, top-right, bottom-left -->
+  <g fill="#0B8A3C">
+    <!-- TL -->
+    <rect x="26" y="26" width="16" height="16" rx="1.5"/>
+    <rect x="28.5" y="28.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
+    <rect x="31" y="31" width="6" height="6" rx="0.5"/>
+    <!-- TR -->
+    <rect x="66" y="26" width="16" height="16" rx="1.5"/>
+    <rect x="68.5" y="28.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
+    <rect x="71" y="31" width="6" height="6" rx="0.5"/>
+    <!-- BL -->
+    <rect x="26" y="66" width="16" height="16" rx="1.5"/>
+    <rect x="28.5" y="68.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
+    <rect x="31" y="71" width="6" height="6" rx="0.5"/>
   </g>
 
-  <!-- Trace orbit sits in the gutter between seal (r=28) and plate (r=34) -->
-  <path
-    d="M34 76.5 A31.5 31.5 0 0 0 85.5 54"
-    stroke="#F8F000"
-    stroke-width="2.4"
-    stroke-linecap="round"
-    fill="none"/>
-  <circle cx="85.5" cy="54" r="3.2" fill="#F8F000"/>
+  <!-- Sparse data modules (iconographic, not a real QR) -->
+  <g fill="#0B8A3C">
+    <!-- near top between finders -->
+    <rect x="46" y="28" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="51" y="28" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="58.5" y="28" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="46" y="33.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="56" y="33.5" width="3.2" height="3.2" rx="0.4"/>
+    <!-- right column -->
+    <rect x="76.5" y="46" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="76.5" y="51.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="76.5" y="58.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="71" y="46" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="71" y="58.5" width="3.2" height="3.2" rx="0.4"/>
+    <!-- bottom row -->
+    <rect x="46" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="51.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="58.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="66" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="71" y="71" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="76.5" y="71" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="76.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+    <!-- left mid -->
+    <rect x="28" y="46" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="28" y="51.5" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="33.5" y="46" width="3.2" height="3.2" rx="0.4"/>
+    <rect x="33.5" y="58.5" width="3.2" height="3.2" rx="0.4"/>
+  </g>
+
+  <!-- White quiet ring behind PCA seal -->
+  <circle cx="54" cy="54" r="18.5" fill="#F4F4F4"/>
+
+  <!-- PCA hemispheric seal (center) -->
+  <g transform="translate(54 54)">
+    <circle r="15.5" fill="#0B8A3C"/>
+    <path d="M0,-15.5 A15.5,15.5 0 0 0 0,15.5 L0,11.6 A11.6,11.6 0 0 1 0,-11.6 Z" fill="#F8F000"/>
+    <path d="M0,-11.6 A11.6,11.6 0 0 0 0,11.6 L0,10.4 A10.4,10.4 0 0 1 0,-10.4 Z" fill="#0B8A3C"/>
+    <path d="M0,-10.4 A10.4,10.4 0 0 0 0,10.4 L0,0 Z" fill="#F4F4F4"/>
+  </g>
 </svg>
