@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
-  <!-- Rounded QR plate; finder mid-rings punched out; seal disc solid -->
+  <!-- PCA disc with finder mid-rings punched out -->
   <path fill="#000000" fill-rule="evenodd" d="
-    M32 22
-    H76
-    A10 10 0 0 1 86 32
-    V76
-    A10 10 0 0 1 76 86
-    H32
-    A10 10 0 0 1 22 76
-    V32
-    A10 10 0 0 1 32 22
-    Z
-    M28.5 28.5 h11 v11 h-11 z
-    M68.5 28.5 h11 v11 h-11 z
-    M28.5 68.5 h11 v11 h-11 z
+    M54 24
+    a 30 30 0 1 0 0.1 0
+    z
+    M32.2 32.2 h9.6 v9.6 h-9.6 z
+    M66.2 32.2 h9.6 v9.6 h-9.6 z
+    M32.2 66.2 h9.6 v9.6 h-9.6 z
   "/>
-  <rect x="31" y="31" width="6" height="6" fill="#000000"/>
-  <rect x="71" y="31" width="6" height="6" fill="#000000"/>
-  <rect x="31" y="71" width="6" height="6" fill="#000000"/>
-  <circle cx="54" cy="54" r="15.5" fill="#000000"/>
+  <rect x="34.5" y="34.5" width="5" height="5" fill="#000000"/>
+  <rect x="68.5" y="34.5" width="5" height="5" fill="#000000"/>
+  <rect x="34.5" y="68.5" width="5" height="5" fill="#000000"/>
 </svg>
