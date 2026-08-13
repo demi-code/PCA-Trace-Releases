@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
-  <!-- PCA disc with finder mid-rings punched out -->
   <path fill="#000000" fill-rule="evenodd" d="
-    M54 24
-    a 30 30 0 1 0 0.1 0
+    M54 22
+    a 32 32 0 1 0 0.1 0
     z
-    M32.2 32.2 h9.6 v9.6 h-9.6 z
-    M66.2 32.2 h9.6 v9.6 h-9.6 z
-    M32.2 66.2 h9.6 v9.6 h-9.6 z
+    M30.4 30.4 h10.2 v10.2 h-10.2 z
+    M67.4 30.4 h10.2 v10.2 h-10.2 z
+    M30.4 67.4 h10.2 v10.2 h-10.2 z
   "/>
-  <rect x="34.5" y="34.5" width="5" height="5" fill="#000000"/>
-  <rect x="68.5" y="34.5" width="5" height="5" fill="#000000"/>
-  <rect x="34.5" y="68.5" width="5" height="5" fill="#000000"/>
+  <rect x="32.9" y="32.9" width="5.2" height="5.2" fill="#000000"/>
+  <rect x="69.9" y="32.9" width="5.2" height="5.2" fill="#000000"/>
+  <rect x="32.9" y="69.9" width="5.2" height="5.2" fill="#000000"/>
+  <circle cx="54" cy="54" r="15.5" fill="#000000"/>
 </svg>

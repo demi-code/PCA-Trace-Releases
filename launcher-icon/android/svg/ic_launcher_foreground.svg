@@ -1,78 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
   <defs>
-    <clipPath id="pcaLogoMask">
-      <circle cx="54" cy="54" r="30"/>
+    <clipPath id="disc">
+      <circle cx="54" cy="54" r="32"/>
     </clipPath>
   </defs>
 
-  <!-- Soft plate for adaptive contrast -->
+  <!-- PCA Trace — Philippine Coconut Authority Region XIII Document Tracking System -->
+  <!-- Circular quiet-zone disc (PCA logo silhouette) -->
   <circle cx="54" cy="54" r="34" fill="#F4F4F4"/>
 
-  <!-- QR code inside PCA logo disc mask -->
-  <g clip-path="url(#pcaLogoMask)">
-    <rect x="24" y="24" width="60" height="60" fill="#F4F4F4"/>
+  <g clip-path="url(#disc)">
+    <circle cx="54" cy="54" r="32" fill="#F4F4F4"/>
 
-    <!-- Finders: green frame, yellow eye -->
-    <rect x="30" y="30" width="14" height="14" rx="1.2" fill="#0B8A3C"/>
-    <rect x="32.2" y="32.2" width="9.6" height="9.6" rx="0.8" fill="#F4F4F4"/>
-    <rect x="34.5" y="34.5" width="5" height="5" rx="0.4" fill="#F8F000"/>
+    <!-- QR finders -->
+    <rect x="28" y="28" width="15" height="15" rx="1.6" fill="#0B8A3C"/>
+    <rect x="30.4" y="30.4" width="10.2" height="10.2" rx="1" fill="#F4F4F4"/>
+    <rect x="32.9" y="32.9" width="5.2" height="5.2" rx="0.5" fill="#F8F000"/>
 
-    <rect x="64" y="30" width="14" height="14" rx="1.2" fill="#0B8A3C"/>
-    <rect x="66.2" y="32.2" width="9.6" height="9.6" rx="0.8" fill="#F4F4F4"/>
-    <rect x="68.5" y="34.5" width="5" height="5" rx="0.4" fill="#F8F000"/>
+    <rect x="65" y="28" width="15" height="15" rx="1.6" fill="#0B8A3C"/>
+    <rect x="67.4" y="30.4" width="10.2" height="10.2" rx="1" fill="#F4F4F4"/>
+    <rect x="69.9" y="32.9" width="5.2" height="5.2" rx="0.5" fill="#F8F000"/>
 
-    <rect x="30" y="64" width="14" height="14" rx="1.2" fill="#0B8A3C"/>
-    <rect x="32.2" y="66.2" width="9.6" height="9.6" rx="0.8" fill="#F4F4F4"/>
-    <rect x="34.5" y="68.5" width="5" height="5" rx="0.4" fill="#F8F000"/>
+    <rect x="28" y="65" width="15" height="15" rx="1.6" fill="#0B8A3C"/>
+    <rect x="30.4" y="67.4" width="10.2" height="10.2" rx="1" fill="#F4F4F4"/>
+    <rect x="32.9" y="69.9" width="5.2" height="5.2" rx="0.5" fill="#F8F000"/>
 
-    <!-- Yellow modules (left / C-band side of PCA logo) -->
+    <!-- Modules: yellow left / green right -->
     <g fill="#F8F000">
-      <rect x="48" y="32" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="52" y="36.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="32" y="48" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="32" y="52.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="32" y="57" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="36.5" y="48" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="36.5" y="57" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="41" y="45.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="41" y="59.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="45.5" y="41" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="45.5" y="64" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="48" y="69.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="41" y="73.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="50" y="73.5" width="2.8" height="2.8" rx="0.3"/>
+      <rect x="47" y="30" width="3" height="3" rx="0.35"/>
+      <rect x="52" y="30" width="3" height="3" rx="0.35"/>
+      <rect x="47" y="35" width="3" height="3" rx="0.35"/>
+      <rect x="30" y="47" width="3" height="3" rx="0.35"/>
+      <rect x="30" y="52.5" width="3" height="3" rx="0.35"/>
+      <rect x="30" y="58" width="3" height="3" rx="0.35"/>
+      <rect x="35" y="47" width="3" height="3" rx="0.35"/>
+      <rect x="35" y="58" width="3" height="3" rx="0.35"/>
+      <rect x="47" y="75" width="3" height="3" rx="0.35"/>
+      <rect x="52" y="75" width="3" height="3" rx="0.35"/>
+      <rect x="42" y="75" width="3" height="3" rx="0.35"/>
     </g>
-
-    <!-- Green modules (right half of PCA logo) -->
     <g fill="#0B8A3C">
-      <rect x="57" y="32" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="57" y="36.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="61.5" y="41" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="59.5" y="46" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="59.5" y="55" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="64" y="50.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="68.5" y="48" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="68.5" y="57" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="73.2" y="48" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="73.2" y="52.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="73.2" y="57" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="61.5" y="64" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="57" y="69.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="64" y="73.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="68.5" y="69.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="73.2" y="64" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="73.2" y="73.5" width="2.8" height="2.8" rx="0.3"/>
-      <!-- core / center seam modules -->
-      <rect x="50" y="50.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="45.5" y="50.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="54.5" y="45.5" width="2.8" height="2.8" rx="0.3"/>
-      <rect x="54.5" y="59.5" width="2.8" height="2.8" rx="0.3"/>
+      <rect x="58" y="30" width="3" height="3" rx="0.35"/>
+      <rect x="58" y="35" width="3" height="3" rx="0.35"/>
+      <rect x="75" y="47" width="3" height="3" rx="0.35"/>
+      <rect x="75" y="52.5" width="3" height="3" rx="0.35"/>
+      <rect x="75" y="58" width="3" height="3" rx="0.35"/>
+      <rect x="70" y="47" width="3" height="3" rx="0.35"/>
+      <rect x="70" y="58" width="3" height="3" rx="0.35"/>
+      <rect x="58" y="75" width="3" height="3" rx="0.35"/>
+      <rect x="65" y="75" width="3" height="3" rx="0.35"/>
+      <rect x="70" y="70" width="3" height="3" rx="0.35"/>
+      <rect x="75" y="70" width="3" height="3" rx="0.35"/>
+      <rect x="75" y="75" width="3" height="3" rx="0.35"/>
     </g>
   </g>
 
-  <!-- PCA logo rim (defines the mask edge) -->
-  <circle cx="54" cy="54" r="30" fill="none" stroke="#0B8A3C" stroke-width="1.8"/>
-  <!-- Vertical split seam from the PCA mark -->
-  <line x1="54" y1="25" x2="54" y2="83" stroke="#0B8A3C" stroke-width="1.1" stroke-linecap="round" opacity="0.5"/>
+  <!-- PCA seal -->
+  <circle cx="54" cy="54" r="18.5" fill="#F4F4F4"/>
+  <g transform="translate(54 54)">
+    <circle r="15.5" fill="#0B8A3C"/>
+    <path d="M0,-15.5 A15.5,15.5 0 0 0 0,15.5 L0,11.6 A11.6,11.6 0 0 1 0,-11.6 Z" fill="#F8F000"/>
+    <path d="M0,-11.6 A11.6,11.6 0 0 0 0,11.6 L0,10.4 A10.4,10.4 0 0 1 0,-10.4 Z" fill="#0B8A3C"/>
+    <path d="M0,-10.4 A10.4,10.4 0 0 0 0,10.4 L0,0 Z" fill="#F4F4F4"/>
+  </g>
+
+  <!-- Disc rim -->
+  <circle cx="54" cy="54" r="32" fill="none" stroke="#0B8A3C" stroke-width="1.5"/>
 </svg>

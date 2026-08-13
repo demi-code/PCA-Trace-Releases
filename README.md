@@ -2,7 +2,10 @@
 
 Public Android APK binaries only. No source.
 
+**PCA Trace** — Philippine Coconut Authority (PCA) Region XIII Document Tracking System.
+
 ## Launcher icon
 
-Reimagined adaptive launcher assets live in [`launcher-icon/`](launcher-icon/). See that folder’s README for palette, previews, and Flutter/Android drop-in steps.
+Adaptive Android launcher assets: [`launcher-icon/`](launcher-icon/)  
+PCA seal + QR tracking motif on brand green. See that folder’s README for drop-in steps.
 
