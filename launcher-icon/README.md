@@ -4,15 +4,15 @@ Drop-in Android adaptive icon assets for **PCA Trace** (`com.demicode.pcatrace`)
 
 ## Concept
 
-**PCA seal + QR code** — the hemispheric PCA mark sits in the quiet zone of a simplified QR plate (classic finder patterns + sparse modules). Reads as document/QR tracing at a glance while keeping brand colors.
+**PCA seal + QR code** — the hemispheric PCA mark sits in the quiet zone of a simplified QR plate. The QR itself uses the full PCA logo palette (green / yellow / off-white), not green-only modules.
 
 | Before (v0.0.3) | After |
 | --- | --- |
 | Seal + tiny “PCA RXIII / Document Tracking System” wordmark | Symbol-only: PCA seal centered on a QR plate |
 | White / black letterboxed backgrounds | Brand-green adaptive background (`#0B8A3C`) |
-| No QR cue | Three finder patterns + sparse modules |
+| No QR cue | Finders + modules in PCA green + yellow |
 
-Inspired by the existing in-app `qrlogo` mark (circular modules), simplified for 48dp launcher legibility with square finders.
+QR styling: green finder frames, yellow finder eyes, modules split yellow (left) / green (right) to echo the seal.
 
 ## Palette
 

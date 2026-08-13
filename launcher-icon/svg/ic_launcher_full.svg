@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
   <rect width="512" height="512" fill="#0B8A3C"/>
-  <!-- Scale of 108dp foreground onto 512: factor ~4.74, but compose directly -->
-  <g transform="translate(0 0) scale(4.74074074)">
+  <g transform="scale(4.74074074)">
     <rect x="22" y="22" width="64" height="64" rx="10" fill="#F4F4F4"/>
-    <g fill="#0B8A3C">
-      <rect x="26" y="26" width="16" height="16" rx="1.5"/>
-      <rect x="28.5" y="28.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
-      <rect x="31" y="31" width="6" height="6" rx="0.5"/>
-      <rect x="66" y="26" width="16" height="16" rx="1.5"/>
-      <rect x="68.5" y="28.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
-      <rect x="71" y="31" width="6" height="6" rx="0.5"/>
-      <rect x="26" y="66" width="16" height="16" rx="1.5"/>
-      <rect x="28.5" y="68.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
-      <rect x="31" y="71" width="6" height="6" rx="0.5"/>
-    </g>
-    <g fill="#0B8A3C">
+    <rect x="26" y="26" width="16" height="16" rx="1.5" fill="#0B8A3C"/>
+    <rect x="28.5" y="28.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
+    <rect x="31" y="31" width="6" height="6" rx="0.5" fill="#F8F000"/>
+    <rect x="66" y="26" width="16" height="16" rx="1.5" fill="#0B8A3C"/>
+    <rect x="68.5" y="28.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
+    <rect x="71" y="31" width="6" height="6" rx="0.5" fill="#F8F000"/>
+    <rect x="26" y="66" width="16" height="16" rx="1.5" fill="#0B8A3C"/>
+    <rect x="28.5" y="68.5" width="11" height="11" rx="1" fill="#F4F4F4"/>
+    <rect x="31" y="71" width="6" height="6" rx="0.5" fill="#F8F000"/>
+    <g fill="#F8F000">
       <rect x="46" y="28" width="3.2" height="3.2" rx="0.4"/>
       <rect x="51" y="28" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="58.5" y="28" width="3.2" height="3.2" rx="0.4"/>
       <rect x="46" y="33.5" width="3.2" height="3.2" rx="0.4"/>
+      <rect x="28" y="46" width="3.2" height="3.2" rx="0.4"/>
+      <rect x="28" y="51.5" width="3.2" height="3.2" rx="0.4"/>
+      <rect x="33.5" y="46" width="3.2" height="3.2" rx="0.4"/>
+      <rect x="33.5" y="58.5" width="3.2" height="3.2" rx="0.4"/>
+      <rect x="46" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+      <rect x="51.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
+    </g>
+    <g fill="#0B8A3C">
+      <rect x="58.5" y="28" width="3.2" height="3.2" rx="0.4"/>
       <rect x="56" y="33.5" width="3.2" height="3.2" rx="0.4"/>
       <rect x="76.5" y="46" width="3.2" height="3.2" rx="0.4"/>
       <rect x="76.5" y="51.5" width="3.2" height="3.2" rx="0.4"/>
       <rect x="76.5" y="58.5" width="3.2" height="3.2" rx="0.4"/>
       <rect x="71" y="46" width="3.2" height="3.2" rx="0.4"/>
       <rect x="71" y="58.5" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="46" y="76.5" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="51.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
       <rect x="58.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
       <rect x="66" y="76.5" width="3.2" height="3.2" rx="0.4"/>
       <rect x="71" y="71" width="3.2" height="3.2" rx="0.4"/>
       <rect x="76.5" y="71" width="3.2" height="3.2" rx="0.4"/>
       <rect x="76.5" y="76.5" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="28" y="46" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="28" y="51.5" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="33.5" y="46" width="3.2" height="3.2" rx="0.4"/>
-      <rect x="33.5" y="58.5" width="3.2" height="3.2" rx="0.4"/>
     </g>
     <circle cx="54" cy="54" r="18.5" fill="#F4F4F4"/>
     <g transform="translate(54 54)">
