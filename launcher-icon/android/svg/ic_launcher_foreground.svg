@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108" fill="none">
+  <!-- Soft plate for contrast on green adaptive backgrounds -->
+  <circle cx="54" cy="54" r="34" fill="#F4F4F4"/>
+
+  <!-- PCA hemispheric seal -->
+  <g transform="translate(54 54)">
+    <!-- Full green disc (right half remains solid green) -->
+    <circle r="28" fill="#0B8A3C"/>
+    <!-- Yellow C-band on the left -->
+    <path d="M0,-28 A28,28 0 0 0 0,28 L0,21 A21,21 0 0 1 0,-21 Z" fill="#F8F000"/>
+    <!-- Thin green separator between yellow and white core -->
+    <path d="M0,-21 A21,21 0 0 0 0,21 L0,19 A19,19 0 0 1 0,-19 Z" fill="#0B8A3C"/>
+    <!-- White core semicircle to center -->
+    <path d="M0,-19 A19,19 0 0 0 0,19 L0,0 Z" fill="#F4F4F4"/>
+  </g>
+
+  <!-- Trace orbit sits in the gutter between seal (r=28) and plate (r=34) -->
+  <path
+    d="M34 76.5 A31.5 31.5 0 0 0 85.5 54"
+    stroke="#F8F000"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    fill="none"/>
+  <circle cx="85.5" cy="54" r="3.2" fill="#F8F000"/>
+</svg>
