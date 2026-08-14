@@ -1,0 +1,16 @@
+---
+description: Logo and app-icon generation must use Material Design 3 and always produce SVG + high-quality PNG
+alwaysApply: true
+---
+
+logo-generation:
+
+- Whenever generating, creating, redesigning, or exporting a logo, brand mark, app icon, or launcher icon, follow Material Design 3 (MD3 / Material You) icon guidance.
+- Always produce **both**:
+  - a clean **SVG** vector master
+  - a **high-quality PNG** master at least **1024×1024** (prefer 2048×2048), transparent unless opacity is required
+- Never deliver only an AI raster preview or only one format.
+- For Android / adaptive icons: 108 dp canvas, keep critical art inside the 66 dp safe zone; no baked-in mask, shadow, or fake corner padding; optional monochrome layer for themed icons.
+- Prefer SVG-first: if an image model is used for ideation, convert the approved concept to SVG, then rasterize HQ PNG from that SVG.
+- Document brand color hex tokens when known. Sample from an existing brand logo when the user asks to match it.
+- Do not replace in-app brand assets unless asked; honor launcher-only scope when specified.
