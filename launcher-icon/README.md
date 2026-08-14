@@ -45,13 +45,16 @@ Splash (`windowSplashScreenAnimatedIcon` → `@mipmap/ic_launcher`) will follow 
 
 ```
 launcher-icon/
-  svg/                     masters
+  svg/                     SVG masters (incl. doctrack-mark.svg)
+  export/                  HQ PNG masters (1024 / 2048) from SVG
   android/res/             drop-in launcher resources only
   android/playstore/       Play Console 512
   preview/
   source/                  reference only (current icon, pca_logo, concept)
   scripts/render_icons.py
 ```
+
+Logo policy: Material Design 3; always ship **SVG + HQ PNG** (see `.cursor/rules/logo-generation.mdc`).
 
 ```bash
 pip install -r launcher-icon/scripts/requirements.txt
