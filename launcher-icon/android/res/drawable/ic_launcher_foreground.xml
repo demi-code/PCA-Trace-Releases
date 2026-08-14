@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Document body -->
+    <path
+        android:fillColor="#F2F2F2"
+        android:pathData="M39,30 h24 l11,11 v33 a5,5 0 0 1 -5,5 h-30 a5,5 0 0 1 -5,-5 v-39 a5,5 0 0 1 5,-5 z" />
+    <!-- Fold triangle -->
+    <path
+        android:fillColor="#CFCFCF"
+        android:pathData="M63,30 v11 h11 z" />
+    <path
+        android:fillColor="#E4E4E4"
+        android:pathData="M63,30 l11,11 h-6 a5,5 0 0 1 -5,-5 z" />
+    <!-- Text lines -->
+    <path
+        android:fillColor="#0B8A3C"
+        android:fillAlpha="0.35"
+        android:pathData="M45,48 h18 a1.2,1.2 0 0 1 0,2.4 h-18 a1.2,1.2 0 0 1 0,-2.4 z" />
+    <path
+        android:fillColor="#0B8A3C"
+        android:fillAlpha="0.35"
+        android:pathData="M45,54 h22 a1.2,1.2 0 0 1 0,2.4 h-22 a1.2,1.2 0 0 1 0,-2.4 z" />
+    <path
+        android:fillColor="#0B8A3C"
+        android:fillAlpha="0.35"
+        android:pathData="M45,60 h14 a1.2,1.2 0 0 1 0,2.4 h-14 a1.2,1.2 0 0 1 0,-2.4 z" />
+    <!-- Yellow checkmark -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFF200"
+        android:strokeWidth="5.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M47,70 l7.5,7.5 16,-17" />
+</vector>
