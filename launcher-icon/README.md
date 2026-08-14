@@ -1,71 +1,61 @@
-# PCA Trace — Document tracker launcher icon
+# PCA Trace — Launcher icon only
 
 **App:** PCA Trace (`com.demicode.pcatrace`)  
-**Org:** Philippine Coconut Authority (PCA) Region XIII  
-**System:** Document Tracking System
-
-Android adaptive launcher assets for the document-tracker mark, using official PCA brand colors. No wordmark — the launcher label remains **PCA Trace**.
+**Scope:** Android **homescreen / launcher** icon only.  
+**Do not** replace in-app branding (`assets/images/pca_logo.png` or any Flutter UI asset).
 
 ## Design
 
-Document page with folded corner + yellow checkmark (tracked/verified), on a brand-green adaptive field.
+Document page + yellow check on brand-green field (PCA Region XIII colors).
 
 | Layer | Role |
 | --- | --- |
-| Background | Brand green `#0B8A3C`, 108×108 dp, full bleed |
-| Foreground | Surface document `#F2F2F2` + PCA yellow check `#FFF200` (inside the 66 dp safe zone) |
-| Monochrome | Black document + check silhouette — tinted by the system on Android 13+ |
+| Background | `#0B8A3C` via `@color/ic_launcher_background` |
+| Foreground | `@drawable/ic_launcher_foreground` — document + check (66 dp safe zone) |
+| Monochrome | `@drawable/ic_launcher_monochrome` — Android 13+ themed icons |
 
-| Token | Hex | Source |
-| --- | --- | --- |
-| `pca-green` | `#0B8A3C` | Official PCA disc / adaptive background |
-| `pca-yellow` | `#FFF200` | Official PCA disc annulus / checkmark |
-| `pca-surface` | `#F2F2F2` | Document body |
+| Token | Hex |
+| --- | --- |
+| `pca-green` | `#0B8A3C` |
+| `pca-yellow` | `#FFF200` |
+| `pca-surface` | `#F2F2F2` |
 
-Concept art: `source/doctrack-logo-pca-colors.png` (AI mark matched to `source/pca_logo.png` colors).
+## What to copy (launcher only)
 
-## Specs followed
+Copy these into the Flutter app’s `android/app/src/main/res/` — **nothing under** `assets/` or Dart UI:
 
-- Canvas **108×108 dp**; logo between **48 dp** and **66 dp**
-- All critical artwork inside the **66 dp** safe zone (never clipped by OEM masks)
-- Two layers for the color icon; optional **monochrome** layer for themed icons
-- Clean edges — no baked-in mask, shadow, or rounded-corner padding
-- Vectors preferred (`drawable/ic_launcher_*.xml`); PNG mipmaps for legacy API ≤ 25
-- Play Store **512×512** is the 72 dp viewport, full bleed, opaque (Play applies its own mask)
+| From `launcher-icon/android/res/` | Purpose |
+| --- | --- |
+| `values/ic_launcher_colors.xml` | Merge `ic_launcher_background` into existing `colors.xml` if present (current APK uses white — replace with `#0B8A3C`) |
+| `drawable-*/ic_launcher_foreground.png` | Adaptive foreground (replaces existing launcher foreground PNGs) |
+| `drawable/ic_launcher_monochrome.xml` | Themed-icon layer (new) |
+| `mipmap-anydpi-v26/ic_launcher.xml` | Adaptive icon (no 16% inset — artwork already safe-zoned) |
+| `mipmap-anydpi-v26/ic_launcher_round.xml` | Round adaptive (optional; add if you use `roundIcon`) |
+| `mipmap-*/ic_launcher.png` (+ `_round.png`) | Legacy API ≤ 25 |
+
+**Do not copy / do not replace**
+
+- `assets/flutter_assets/assets/images/pca_logo.png` (or source `assets/images/pca_logo.png`)
+- Any other Flutter image, splash logo widget, or in-app header that uses the official PCA disc
+- Concept art under `launcher-icon/source/` (reference only)
+
+Splash (`windowSplashScreenAnimatedIcon` → `@mipmap/ic_launcher`) will follow the launcher icon automatically. That is still the system launch glyph, not in-app content. Keep the official disc for in-app UI.
 
 ## Layout
 
 ```
 launcher-icon/
-  svg/                          SVG masters (108 dp viewBox)
-  android/res/
-    values/ic_launcher_colors.xml
-    drawable/ic_launcher_foreground.xml
-    drawable/ic_launcher_monochrome.xml
-    mipmap-anydpi-v26/          adaptive-icon XML (fg + bg + mono)
-    mipmap-{mdpi..xxxhdpi}/     legacy + layer PNGs
-  android/playstore/            512 px high-res icon
-  preview/                      masks, themed icons, keylines, before/after
-  source/                       current APK icon + concept + official disc
+  svg/                     masters
+  android/res/             drop-in launcher resources only
+  android/playstore/       Play Console 512
+  preview/
+  source/                  reference only (current icon, pca_logo, concept)
   scripts/render_icons.py
 ```
-
-## Flutter / Android drop-in
-
-Copy `android/res/` into the Flutter app at `android/app/src/main/res/`.
-
-1. Merge `values/ic_launcher_colors.xml` (or add `ic_launcher_background` to an existing `colors.xml`).
-2. Copy `drawable/ic_launcher_foreground.xml` and `drawable/ic_launcher_monochrome.xml`.
-3. Copy `mipmap-anydpi-v26/ic_launcher.xml` and `ic_launcher_round.xml`.
-4. Copy `mipmap-*/ic_launcher.png` and `ic_launcher_round.png` (API 25 and below).
-5. Optional: copy layer PNGs (`ic_launcher_foreground.png`, `ic_launcher_background.png`, `ic_launcher_monochrome.png`) if you prefer bitmaps over vectors.
-6. Upload `android/playstore/ic_launcher-playstore-512.png` to Play Console.
-
-Do not keep text in the icon. The system shows **PCA Trace** under the glyph.
 
 ```bash
 pip install -r launcher-icon/scripts/requirements.txt
 python3 launcher-icon/scripts/render_icons.py
 ```
 
-Requires system Cairo (`libcairo2`).
+Requires Cairo (`libcairo2`).

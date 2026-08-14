@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Render PCA Trace Material Design 3 launcher SVG masters.
+"""Render PCA Trace launcher SVG masters (homescreen / adaptive only).
 
 Produces:
-  - Android density packs (legacy + adaptive layer PNGs)
+  - drawable-*/ic_launcher_foreground.png (matches Flutter APK layout)
+  - mipmap-*/ic_launcher(.png|_round.png) for API ≤ 25
   - Play Store 512
   - MD3 mask / themed-icon / 48dp previews
+
+Does not touch in-app assets (pca_logo.png).
 """
 
 from __future__ import annotations
@@ -297,19 +300,16 @@ def main() -> None:
     save(play.convert("RGBA"), OUT_PLAY / "ic_launcher-playstore-512.png")
     save(play.convert("RGBA"), OUT_PREVIEW / "ic_launcher_512.png")
 
+    # Adaptive foreground PNGs live under drawable-* (same as current APK).
     for density, size in ADAPTIVE.items():
         fg = render_svg(SVG / "ic_launcher_foreground.svg", size)
-        bg = render_svg(SVG / "ic_launcher_background.svg", size)
-        save(fg, OUT_RES / f"mipmap-{density}" / "ic_launcher_foreground.png")
-        save(bg, OUT_RES / f"mipmap-{density}" / "ic_launcher_background.png")
+        save(fg, OUT_RES / f"drawable-{density}" / "ic_launcher_foreground.png")
 
+    # Legacy launcher mipmaps only — no in-app image assets.
     for density, size in DENSITIES.items():
         full = compose_full(size)
         save(full, OUT_RES / f"mipmap-{density}" / "ic_launcher.png")
         save(apply_mask(full, mask_circle(size)), OUT_RES / f"mipmap-{density}" / "ic_launcher_round.png")
-
-    save(render_svg(SVG / "ic_launcher_monochrome.svg", 432), OUT_RES / "mipmap-xxxhdpi" / "ic_launcher_monochrome.png")
-    save(render_svg(SVG / "ic_launcher_monochrome.svg", 216), OUT_RES / "mipmap-xhdpi" / "ic_launcher_monochrome.png")
 
     preview = compose_full(512)
     save(preview, OUT_PREVIEW / "adaptive_composed_512.png")

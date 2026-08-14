@@ -6,6 +6,6 @@ Public Android APK binaries only. No source.
 
 ## Launcher icon
 
-Material Design 3 adaptive Android launcher assets: [`launcher-icon/`](launcher-icon/)
+Homescreen / adaptive launcher assets only: [`launcher-icon/`](launcher-icon/)
 
-Brand-green field, document + yellow check mark (document tracker), plus a Material You monochrome layer. Drop-in steps are in `launcher-icon/README.md`.
+Document + yellow check on PCA green. **Do not** use these assets to replace in-app `pca_logo.png`. Drop-in steps: `launcher-icon/README.md`.
