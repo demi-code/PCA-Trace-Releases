@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512" viewBox="0 0 512 512"
+     role="img" aria-label="PCA Trace document tracker mark">
+  <!-- Standalone mark. PCA colors: green #0B8A3C, fold #006B2F, yellow #FFF200. -->
+
+  <!-- Document body (rounded rect, top-right corner cut for fold) -->
+  <path fill="#0B8A3C"
+        d="M128,64
+           H320
+           L408,152
+           V416
+           a40,40 0 0 1 -40,40
+           H128
+           a40,40 0 0 1 -40,-40
+           V104
+           a40,40 0 0 1 40,-40
+           z"/>
+
+  <!-- Folded corner -->
+  <path fill="#006B2F" d="M320,64 L408,152 H320 Z"/>
+
+  <!-- Text lines: medium, longest, shortest -->
+  <g fill="#FFFFFF">
+    <rect x="148" y="168" width="120" height="18" rx="9"/>
+    <rect x="148" y="206" width="160" height="18" rx="9"/>
+    <rect x="148" y="244" width="96" height="18" rx="9"/>
+  </g>
+
+  <!-- Yellow checkmark -->
+  <path fill="none"
+        stroke="#FFF200"
+        stroke-width="40"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M164,348 L228,412 L368,256"/>
+</svg>

@@ -1,0 +1,7 @@
+Paste into Cursor → Settings → Rules → User Rules (applies to all projects):
+
+Whenever generating, creating, redesigning, or exporting a logo, brand mark, app icon, or launcher icon:
+- Follow Material Design 3 (MD3 / Material You) icon guidance (108 dp adaptive canvas, 66 dp safe zone for launcher marks; no baked-in masks/shadows).
+- Always produce both a clean SVG vector master and a high-quality PNG master at least 1024×1024 (prefer 2048×2048), transparent unless opacity is required.
+- Prefer SVG-first; if an image model is used for ideation, convert the approved concept to SVG, then rasterize the HQ PNG from that SVG.
+- Never deliver only one format.
